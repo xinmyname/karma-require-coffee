@@ -1,11 +1,4 @@
-tests = []
-
-for file of window.__karma__.files
-    if /Spec\.js$/.test file 
-        tests.push file 
-    
-    if /Spec\.coffee$/.test file 
-        tests.push file
+tests = (file for file of window.__karma__.files when /Spec\.js$/.test file)
 
 requirejs.config {
     baseUrl: '/base/src',
