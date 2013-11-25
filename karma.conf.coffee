@@ -13,7 +13,6 @@ module.exports = (config) ->
     files: [
         {pattern: 'bower_components/**/*.js', included: false},
         {pattern: 'src/**/*.coffee', included: false},
-        {pattern: 'src/**/*.js', included: false},
         {pattern: 'test/**/*Spec.coffee', included: false},
         'test/test-main.coffee',
     ],
@@ -21,7 +20,7 @@ module.exports = (config) ->
 
     # list of files to exclude
     exclude: [
-        'src/main.js'
+        'src/main.coffee'
     ],
 
 
